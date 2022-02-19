@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablice</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/podstrony/1.html" class="navbar__element">Witaj świecie!</a
+      ><a href="/podstrony/2.html" class="navbar__element">Zmienne i typy</a
+      ><a href="/podstrony/3.html" class="navbar__element">Strumień wejściowy</a
+      ><a href="/podstrony/4.html" class="navbar__element"
+        >Instrukcja warunkowa</a
+      ><a
+        href="/podstrony/5.html"
+        class="navbar__element navbar__element--selected"
+        >Tablice</a
+      >
+      <a href="/podstrony/6.html" class="navbar__element">Pętle</a>
+    </nav>
+    <main class="lekcja">
+      <h1>Tablice</h1>
+      <p>
+        Twoim zadaniem domowym było stworzenie kalkulatora wykonującego operację
+        na dwóch liczbach. Jednak co jeśli chcielibyśmy wykonywać operacje na
+        kilku liczbach, wtedy tworzenie zmiennych liczba1, liczba2, liczb3 nie
+        byłoby dobrym pomysłem. Do tego możemy wykorzystać tablice, w których
+        możemy dodawać i odczytywać dane za pomocą indeksu.
+      </p>
+      <pre class="code">
+// Deklaracja pustej tablicy dla liczb całkowitych, maksymalna liczba elementów wynosi 10
+int tablica[10] 
+</pre
+      >
+      <pre class="code">
+// Deklaracja tablicy z kilkoma elementami dla ciągów znaków, maksymalna liczba elementów wynosi 5.
+string tablica[5] = ["to", "jest", "delaracja", "tablice"]
+
+// Zmiana 4 elementu (pierwszy element w tablicy ma indeks 0, dlatego jeśli chcemy zmienić czwarty element, adresujemy element o indeksie 3).
+tablica[3] = "tablicy"
+
+// Zmiana 5 elementu.
+tablica[4] = "ciagow znakow"
+
+//Odczytujemy wszystkie elementy po kolei
+cout &lt;&lt; tablica[0] &lt;&lt; tablica[1] &lt;&lt; tablica[2] &lt;&lt; tablica[3] &lt;&lt; tablica[4];
+</pre
+      >
+      <h2>Zadanie domowe</h2>
+      <p>Przebuduj poprzedni program i zastosuj w nim tablice.</p>
+    </main>
+    <footer class="footer">Wykonał Jan Michalak</footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Witaj świecie</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a
+        href="/podstrony/1.html"
+        class="navbar__element navbar__element--selected"
+        >Witaj świecie!</a
+      ><a href="/podstrony/2.html" class="navbar__element">Zmienne i typy</a
+      ><a href="/podstrony/3.html" class="navbar__element">Strumień wejściowy</a
+      ><a href="/podstrony/4.html" class="navbar__element"
+        >Instrukcja warunkowa</a
+      ><a href="/podstrony/5.html" class="navbar__element">Tablice</a>
+      <a href="/podstrony/6.html" class="navbar__element">Pętle</a>
+    </nav>
+    <main class="lekcja">
+      <h1>Witaj w świecie!</h1>
+      <p>
+        Witamy w poradniku C++! Oto pierwsza lekcja na której napiszesz swój
+        pierwszy program! Będzie to bardzo prosty program wyświetlający tekst
+        "Hello World!" - Witaj Świecie. Jest to pierwszy program każdego
+        programisty i wygląda następująco:
+      </p>
+      <pre class="code">
+// Dołączanie pliku nagłówkowego
+#include &lt;iostream&gt;
+
+// Deklaracja użycia przestrzeni nazw STD
+using namespace std;
+
+// Funkcja główna
+int main()
+{
+  // Wypisz tekst na ekranie, używając strumienia wyjścia "cout"
+  cout &lt;&lt; "Hello World!";
+
+  // Zakończ funkcję
+  return 0;
+}</pre
+      >
+      <p>
+        Otwórz swoje ulubione środowisko programistyczne, stwórz aplikację
+        konsolową. Wklej kod i skompiluj go. W konsolce powinien pojawić się
+        następujący tekst:
+      </p>
+      <img src="/screenshot/hello-world.png" alt="" />
+      <p>
+        To wszystko na dziś. Jeżeli chcesz możesz pobawić się z kodem, albo
+        przejść do następnej lekcji.
+      </p>
+    </main>
+    <footer class="footer">Wykonał Jan Michalak</footer>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrukcja warunkowa</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/podstrony/1.html" class="navbar__element">Witaj świecie!</a
+      ><a href="/podstrony/2.html" class="navbar__element">Zmienne i typy</a
+      ><a href="/podstrony/3.html" class="navbar__element">Strumień wejściowy</a
+      ><a
+        href="/podstrony/4.html"
+        class="navbar__element navbar__element--selected"
+        >Instrukcja warunkowa</a
+      ><a href="/podstrony/5.html" class="navbar__element">Tablice</a>
+      <a href="/podstrony/6.html" class="navbar__element">Pętle</a>
+    </nav>
+    <main class="lekcja">
+      <h1>Instrukcja warunkowa</h1>
+      <p>
+        Na ostatniej lekcji dowiedzieliśmy się jak przechwytywać dane wejściowe.
+        Jednak co jeżeli chcemy zmienić informację zwrotną w zależności od
+        wpisanego tekstu? Do tego może nam posłużyć blok
+        <code>if ... else</code>:
+      </p>
+      <pre class="code">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+  string odpowiedz;
+  cout &lt;&lt; "Czy podoba ci sie ten tutorial? (tak/nie)";
+  cin >> odpowiedz;
+  // jeżeli użytkownik wpisał "tak", to wyświetl następujący tekst. 
+  if(odpowiedz == "tak"){
+    cout &lt;&lt; "Bardzo sie cieszymy :D";
+  // natomiast jeżeli użytkownik wpisał "nie", to wyświetl następujący tekst. 
+  }else if(odpowiedz == "nie"){
+    cout &lt;&lt; "Bardzo nam przykro :c";
+  // jeżeli oba warunki nie zostały spełnione, to wyświetl następujący tekst. 
+  }else{
+    cout &lt;&lt; "Odpowiedz tak lub nie.";
+  }
+  return 0;
+}    
+</pre
+      >
+      <h2>Operacje porównania</h2>
+      <p>Jak pewnie zauważyłeś, do sprawdzania czy jedna wartość jest równa drugiej używany operatora "==". Prócz tego istnieją operacje:
+        <ul>
+          <li>!= - ... jest różne od ...</li>
+          <li>> - ... jest większe od ... (tylko liczby)</li>
+          <li>>= - ... jest większe lub równe ... (tylko liczby)</li>
+          <li>&lt; - ... jest mniejsze od ... (tylko liczby)</li>
+          <li>&lt;= - ... jest mniejsze lub równe ... (tylko liczby)</li>
+        </ul>
+      </p>
+      <h2>Zadanie domowe</h2>
+      <p>
+        W ramach zadania domowego stwórz kalkulator. Program będzie przyjmował pierwszą liczbę, drugą liczbę i jeden z danych symboli *, /, +, -. (W C++ operacje mnożenia, dzielenia, dodawania i odejmowania, odpowiadają znakom: *, /, +, -). Przykład jak to ma wyglądać w konsolce:
+<pre class="code">
+Podaj pierwszą liczbę: 10
+Podaj drugą liczbę: 5
+Podaj operator: /
+Równanie: 10/5=2
+</pre>
+      </p>
+    </main>
+    <footer class="footer">Wykonał Jan Michalak</footer>
+  </body>
+</html>

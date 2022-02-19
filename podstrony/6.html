@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pętle</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/podstrony/1.html" class="navbar__element">Witaj świecie!</a
+      ><a href="/podstrony/2.html" class="navbar__element">Zmienne i typy</a
+      ><a href="/podstrony/3.html" class="navbar__element">Strumień wejściowy</a
+      ><a href="/podstrony/4.html" class="navbar__element"
+        >Instrukcja warunkowa</a
+      ><a href="/podstrony/5.html" class="navbar__element">Tablice</a>
+      <a
+        href="/podstrony/6.html"
+        class="navbar__element navbar__element--selected"
+        >Pętle</a
+      >
+    </nav>
+    <main class="lekcja">
+      <h1>Pętle</h1>
+      <p>
+        Pętle to przydatne narzędzie, które pozwoli nam na wykonywanie tego
+        samego kodu bez kopiowania i wklejania go w nieskończoność. W C++
+        istnieją 3 typy pętli, które mają różne zastosowania
+      </p>
+      <h2>Pętla for</h2>
+      <p>
+        Najczęściej spotykany rodzaj pętli, stosowana jest do iteracji między
+        elementami tablicy.
+      </p>
+      <pre class="code">
+// for(stan_początkowy; warunek; zmiana){
+//   kod wykonywany  
+// }
+
+for(int licznik = 0; licznik&lt;5; licznik++){
+  cout &lt;&lt; "Licznik wynosi: " &lt;&lt; licznik &lt;&lt; endl;
+}</pre
+      >
+      <h2>Pętla while</h2>
+      <p>
+        Wykorzystywana do tworzenia nieskończonych pętli, lub do zmiennych,
+        które już wcześniej zadeklarowaliśmy.
+      </p>
+      <pre class="code">
+// while(warunek){
+//   kod wykonywany  
+// }
+
+int licznik = 0;
+while(licznik&lt;5){
+  cout &lt;&lt; "Licznik wynosi: " &lt;&lt; licznik &lt;&lt; endl;
+  licznik++;
+}
+
+// nieskończona pętla
+while(true){
+  cout &lt;&lt; "I tak do konca pamieci";
+}
+</pre
+      >
+      <h2>Pętla do while</h2>
+      <p>
+        Tak zwany lukier składniowy do pętli while - działa tak samo jak pętla
+        while, tylko ma odrobinę inny wygląd
+      </p>
+      <pre class="code">
+// do {
+//   kod wykonywany 
+// } while (warunek);
+
+int licznik = 0;
+do {
+  cout &lt;&lt; "Licznik wynosi: " &lt;&lt; licznik &lt;&lt; endl;
+  licznik++;
+}
+while (licznik&lt;5);</pre
+      >
+      <h2>Zadanie Domowe</h2>
+      <p>
+        Napisz program który będzie pytał użytkownika 10 razy o liczbę i na
+        końcu zwróci dodane liczby.
+      </p>
+    </main>
+    <footer class="footer">Wykonał Jan Michalak</footer>
+  </body>
+</html>

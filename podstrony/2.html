@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zmienne i typy</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/podstrony/1.html" class="navbar__element">Witaj świecie!</a
+      ><a
+        href="/podstrony/2.html"
+        class="navbar__element navbar__element--selected"
+        >Zmienne i typy</a
+      ><a href="/podstrony/3.html" class="navbar__element">Strumień wejściowy</a
+      ><a href="/podstrony/4.html" class="navbar__element"
+        >Instrukcja warunkowa</a
+      ><a href="/podstrony/5.html" class="navbar__element">Tablice</a>
+      <a href="/podstrony/6.html" class="navbar__element">Pętle</a>
+    </nav>
+    <main class="lekcja">
+      <h1>Zmienne i typy</h1>
+      <p>
+        Zmienna - to obiekt w programowaniu, który przechowuje różnego rodzaju dane niezbędne do działania programu. Zmienna podczas działania programu może zmieniać swoje. Tworząc zmienną musimy nadać jej nazwę oraz typ, który określa co nasza zmienna będzie przechowywać.
+      </p>
+      <p>
+        Typ zmiennej - tworząc zmienną musimy się zastanowić, jakie będzie jej zastosowanie. Zmienne mogą przechowywać znaki, liczby całkowite, liczby rzeczywiste, ciągi znaków lub wartość logiczną true lub false.
+      </p>
+      <p>
+        Podstawowe typy zmiennych:
+        <ul>
+          <li>int - liczby całkowite</li>
+          <li>char - pojedyńczy znak</li>
+          <li>float - liczby zmiennoprzecinkowe pojedynczej precyzji</li>
+          <li>double - liczby zmiennoprzecinkowe podwójnej precyzji (wykorzystywane tylko w obliczeniach potrzebujące dużej precyzji)</li>
+          <li>string - ciąg znaków</li>
+          <li>boolean - typ logiczny, przyjmuje wartości true i false (prawda, fałsz)</li>
+        </ul>
+      </p>
+<pre class="code">#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+  // Deklarujemy wszystkie zmienne
+  int liczba_calkowita = 18;
+  char znak = 'l';
+  float liczba_zmiennoprzecinkowa = 21.37;
+  string ciag_znakow = "Mam ";
+  bool typ_logiczny = true;
+
+  // wypisujemy poszczegolne zmienne jedna po drugiej, endl oznacza koniec lini.
+  cout &lt;&lt; ciag_znakow &lt;&lt; liczba_calkowita &lt;&lt; znak &lt;&lt; endl;
+
+  // wypisujemy dalsze zmienne w nowej lini.
+  cout &lt;&lt; "float: " &lt;&lt; liczba_zmiennoprzecinkowa &lt;&lt; " bool:" &lt;&lt; typ_logiczny;
+  return 0;
+}</pre>
+        <p>
+          Otwórz swoje ulubione środowisko programistyczne, stwórz aplikację
+          konsolową. Wklej kod i skompiluj go. W konsolce powinien pojawić się
+          następujący tekst:
+        </p>
+        <img src="/screenshot/zmienne.png" alt="" />
+        <p>
+          To wszystko na dziś. Jeżeli chcesz możesz pobawić się z kodem, albo
+          przejść do następnej lekcji.
+        </p>
+      </main>
+    <footer class="footer">Wykonał Jan Michalak</footer>
+  </body>
+</html>

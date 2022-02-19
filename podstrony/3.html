@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strumień wejściowy</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/podstrony/1.html" class="navbar__element">Witaj świecie!</a
+      ><a href="/podstrony/2.html" class="navbar__element">Zmienne i typy</a
+      ><a
+        href="/podstrony/3.html"
+        class="navbar__element navbar__element--selected"
+        >Strumień wejściowy</a
+      ><a href="/podstrony/4.html" class="navbar__element"
+        >Instrukcja warunkowa</a
+      ><a href="/podstrony/5.html" class="navbar__element">Tablice</a>
+      <a href="/podstrony/6.html" class="navbar__element">Pętle</a>
+    </nav>
+    <main class="lekcja">
+      <h1>Strumień wejściowy</h1>
+      <p>
+        Wiemy już jak wypisywać dane na ekranie, przydałoby się jednak trochę
+        interaktywności. Dlatego w tym segmencie nauczymy się jak wczytywać dane
+        wpisane na klawiaturze. Użyjemy do tego funkcję <code>cin</code>:
+      </p>
+      <pre class="code">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+  // deklarujemy zmienną do przechowywania wpisanych danych
+  string dane;
+  cout &lt;&lt; "Prosze cos wpisac: ";
+  // wpisane tekst zapisujemy do zmiennej "dane"
+  cin &gt;&gt; dane;
+  cout &lt;&lt; dane;
+  return 0;
+}
+</pre
+      >
+      <p>
+        Otwórz swoje ulubione środowisko programistyczne, stwórz aplikację
+        konsolową. Wklej kod i skompiluj go. W konsolce powinien pojawić się
+        następujący tekst:
+      </p>
+      <img src="/screenshot/strumien.png" alt="" />
+      <h2>Zadanie domowe</h2>
+      <p>
+        Stwórz program, który będzie wczytywał 3 razy dane i zapisywał je do
+        różnych zmiennych. A na końcu wyświetli je wszystkie w jednej lini.
+      </p>
+    </main>
+    <footer class="footer">Wykonał Jan Michalak</footer>
+  </body>
+</html>

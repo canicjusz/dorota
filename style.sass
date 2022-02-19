@@ -1,0 +1,72 @@
+html, body
+  margin: 0
+  padding: 0
+
+h1
+  margin: 0
+
+img
+  border-radius: 5px
+
+body
+  font-family: "Arial", sans-serif
+  background: #ECECEC
+  
+.navbar
+  display: flex
+  height: 50px
+  border-bottom: 1px solid black
+  box-sizing: border-box
+  padding: 0 100px
+  justify-content: center
+
+  &__element
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    width: 200px
+    color: black
+
+    &--selected
+      color: white
+      background: #bdbdbd
+
+    &:hover
+      color: white
+      background: #bdbdbd
+
+.hero
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  min-height: calc(100vh - 100px)
+
+  &__img
+    width: 500px
+    height: 500px
+    object-fit: scale-down
+
+  &__sub-title
+    margin: 0
+
+.footer
+  border-top: 1px solid black
+  box-sizing: border-box
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 50px
+
+.code
+  border-radius: 10px
+  width: max-content
+  padding: 10px
+  color: white
+  background: #333333
+
+.lekcja
+  padding: 20px
+  box-sizing: border-box
+  min-height: calc(100vh - 100px)
